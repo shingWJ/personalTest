@@ -1,0 +1,394 @@
+[Mon Mar 21 2016 11:29:55 GMT+0800 (中国标准时间)]/regist
+Error: req.flash() requires sessions
+    at Error (native)
+    at IncomingMessage._flash [as flash] (D:\Temp\nodeJs\pursue\node_modules\connect-flash\lib\flash.js:60:41)
+    at D:\Temp\nodeJs\pursue\routes\router.js:18:17
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:271:10)
+[Mon Mar 21 2016 13:20:23 GMT+0800 (中国标准时间)]/regist
+Error: req.flash() requires sessions
+    at Error (native)
+    at IncomingMessage._flash [as flash] (D:\Temp\nodeJs\pursue\node_modules\connect-flash\lib\flash.js:60:41)
+    at D:\Temp\nodeJs\pursue\routes\router.js:18:17
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:271:10)
+[Mon Mar 21 2016 13:25:11 GMT+0800 (中国标准时间)]/regist
+Error: req.flash() requires sessions
+    at Error (native)
+    at IncomingMessage._flash [as flash] (D:\Temp\nodeJs\pursue\node_modules\connect-flash\lib\flash.js:60:41)
+    at D:\Temp\nodeJs\pursue\routes\router.js:18:17
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:271:10)
+[Mon Mar 21 2016 13:25:13 GMT+0800 (中国标准时间)]/regist
+Error: req.flash() requires sessions
+    at Error (native)
+    at IncomingMessage._flash [as flash] (D:\Temp\nodeJs\pursue\node_modules\connect-flash\lib\flash.js:60:41)
+    at D:\Temp\nodeJs\pursue\routes\router.js:18:17
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:330:12)
+    at next (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\index.js:271:10)
+[Mon Mar 21 2016 13:25:30 GMT+0800 (中国标准时间)]/login
+ReferenceError: D:\Temp\nodeJs\pursue\views\login.ejs:15
+    13|     		<label for="account">账号</label>
+    14|     		<input type="text" class="form-control" id="account" placeholder="请输入账号">
+ >> 15|   		</div>
+    16|   		<div class="form-group">
+    17|     		<label for="password">密码</label>
+    18|     		<input type="password" class="form-control" id="password" placeholder="请输入密码">
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:10:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:25:31 GMT+0800 (中国标准时间)]/login
+ReferenceError: D:\Temp\nodeJs\pursue\views\login.ejs:15
+    13|     		<label for="account">账号</label>
+    14|     		<input type="text" class="form-control" id="account" placeholder="请输入账号">
+ >> 15|   		</div>
+    16|   		<div class="form-group">
+    17|     		<label for="password">密码</label>
+    18|     		<input type="password" class="form-control" id="password" placeholder="请输入密码">
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:10:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:31:26 GMT+0800 (中国标准时间)]/login
+ReferenceError: D:\Temp\nodeJs\pursue\views\login.ejs:15
+    13|     		<label for="account">账号</label>
+    14|     		<input type="text" class="form-control" id="account" placeholder="请输入账号">
+ >> 15|   		</div>
+    16|   		<div class="form-group">
+    17|     		<label for="password">密码</label>
+    18|     		<input type="password" class="form-control" id="password" placeholder="请输入密码">
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:10:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:31:31 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:36:03 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:36:03 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:38:58 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:39:59 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:40:00 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:40:00 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:40:00 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:40:01 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:40:01 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:40:01 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Mon Mar 21 2016 13:40:01 GMT+0800 (中国标准时间)]/
+ReferenceError: D:\Temp\nodeJs\pursue\views\index.ejs:15
+    13| 	<div class="content-main">
+    14| 		<div class="every-content">
+ >> 15| 		</div>
+    16| 	</div>
+    17| 	<div class="content-footer">
+    18| 	</div>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:12)
+    at eval (eval at <anonymous> (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:31:9)
+    at returnedFn (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\Temp\nodeJs\pursue\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\view.js:126:8)
+    at tryRender (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (D:\Temp\nodeJs\pursue\node_modules\express\lib\response.js:961:7)
+    at D:\Temp\nodeJs\pursue\routes\router.js:7:7
+    at Layer.handle [as handle_request] (D:\Temp\nodeJs\pursue\node_modules\express\lib\router\layer.js:95:5)
+[Fri Jun 17 2016 16:18:27 GMT+0800 (中国标准时间)]
+login error: not login
+[Wed Jun 22 2016 11:30:31 GMT+0800 (中国标准时间)]
+poetry post error: TypeError: collection.findAndModify(...).toArray is not a function
+[Wed Jun 22 2016 11:36:03 GMT+0800 (中国标准时间)]
+poetry post error: MongoError: need remove or update
+[Wed Jun 22 2016 13:19:24 GMT+0800 (中国标准时间)]
+poetry post error: MongoError: exception: nextSafe(): { $err: "Can't canonicalize query: BadValue bad sort specification", code: 17287 }
+[Wed Jun 22 2016 13:21:20 GMT+0800 (中国标准时间)]
+poetry post error: MongoError: exception: nextSafe(): { $err: "Can't canonicalize query: BadValue bad sort specification", code: 17287 }
+[Wed Jun 22 2016 13:23:06 GMT+0800 (中国标准时间)]
+poetry post error: MongoError: exception: nextSafe(): { $err: "Can't canonicalize query: BadValue bad sort specification", code: 17287 }
+[Wed Jun 22 2016 13:36:39 GMT+0800 (中国标准时间)]
+poetry post error: MongoError: Cannot apply $inc to a value of non-numeric type. {_id: ObjectId('5769f8b86260050d4facf1e9')} has the field 'id' of non-numeric type String
+[Wed Jul 06 2016 15:48:05 GMT+0800 (中国标准时间)]
+recommends error: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+[Wed Jul 06 2016 15:51:26 GMT+0800 (中国标准时间)]
+recommends error: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+[Wed Jul 06 2016 15:54:16 GMT+0800 (中国标准时间)]
+recommends error: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+[Wed Jul 06 2016 15:57:47 GMT+0800 (中国标准时间)]
+recommends error: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+[Wed Jul 06 2016 15:59:55 GMT+0800 (中国标准时间)]
+recommends error: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+[Wed Jul 06 2016 16:01:35 GMT+0800 (中国标准时间)]
+recommends error: http://p1.meituan.net/460.280/deal/ff7d3f49fa0391b90c8b0f901272c4a625186.jpg@PC_0_6_640_387a%7C388h_640w_2e_100q
+[Thu Aug 04 2016 14:16:01 GMT+0800 (中国标准时间)]
+login error: not login
+[Thu Aug 04 2016 14:18:27 GMT+0800 (中国标准时间)]
+login error: not login
+[Thu Aug 04 2016 14:18:53 GMT+0800 (中国标准时间)]
+login error: already logined
+[Thu Aug 04 2016 14:28:09 GMT+0800 (中国标准时间)]
+login error: not login
+[Thu Aug 04 2016 16:05:32 GMT+0800 (中国标准时间)]
+login error: not login
+[Fri Aug 05 2016 16:55:45 GMT+0800 (中国标准时间)]
+login error: not login
+[Fri Aug 05 2016 16:56:39 GMT+0800 (中国标准时间)]
+login error: already logined
+[Thu Aug 11 2016 14:14:56 GMT+0800 (中国标准时间)]
+login error: not login
+[Tue Oct 18 2016 15:27:35 GMT+0800 (中国标准时间)]
+login error: not login
+[Wed Oct 19 2016 17:07:03 GMT+0800 (中国标准时间)]
+login error: not login
