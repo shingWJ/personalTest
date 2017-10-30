@@ -762,3 +762,59 @@ nav .nav-headFoot {
     background-color: white;
     opacity:0.4;
 }
+
+.happy-login-div {
+    /*background-color: #1de9b6;*/
+    margin: 0.4em 0.4em;
+}
+
+.behappy-login {
+    width: 100%;
+}
+
+.card {
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+}
+
+.card-block {
+    width: 90%;
+    margin: 0.75em auto;
+}
+
+.happy-comment {
+    float: right;
+}
+
+.heart-like {
+    color: red;
+}
+
+.comment-div {
+    position: fixed;
+    bottom: 0.1em;
+    overflow: hidden;
+    width: 98%;
+    margin: 0 0.2em;
+}
+
+.comment-p {
+    margin-top: -0.75em;
+    margin-left: 0.25em;
+}
+
+.comment-list {
+    width: 95%;
+    margin: 0.25em auto;
+    background-color: #f5f5f5;
+    font-size: 0.5em;
+    padding-top: 1em;
+}
+
+.fixedHeader {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}

@@ -9,7 +9,7 @@ var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var ejs = require('ejs');
 var flash = require('connect-flash');
-var multer = require('multer');
+//var multer = require('multer');
 var fs = require('fs');
 var cookie = require('cookie');
 var ueditor = require("ueditor");
@@ -48,8 +48,9 @@ app.use(function(err,req, res, next) {
 var sessionStore = new MongoStore({
     db: settings.db,
     host: settings.host,
-    port: settings.port
-  })
+    port: settings.port,
+    url: 'mongodb://' + settings.host + ':' + settings.port + '/' + settings.db
+  });
 app.use(session({
   resave: false, 
   secret: settings.cookieSecret,

@@ -4,6 +4,7 @@ var User = require('../model/user')
 var Emotion = require('../model/emotion');
 var Personnel = require('../model/personnel');
 var Article = require('../model/article');
+var Comment = require('../model/comment');
 var Poetry = require('../model/poetry');
 var formidable = require('formidable');
 var fs = require('fs');
@@ -15,6 +16,7 @@ var imageProcess = require('../routes/imageProcess');
 var multipart = require('connect-multiparty');
 var crawler = require('./crawler');
 var PartyEntry = require('../model/partyEntry');
+var beHappy = require('./beHappy');
 
 /*CONSTANT*/
 var CONSTANT_TITLE = "浮萍网";
@@ -109,6 +111,127 @@ module.exports = function(app, accessLog,errorLog) {
 	/*自己懂的*/
 	app.get('/dream', function(req, res) {
 		res.render('dream', {});
+	})
+
+	app.get('/behappy',checkHappyNotLogin);
+	app.get('/behappy', function(req, res) {
+		res.render('behappylogin', {
+						title: CONSTANT_TITLE,
+						success: req.flash('success').toString(),
+						error: req.flash('error').toString()
+					});
+	})
+
+	app.post('/behappy', function(req, res) {
+		var md5 = crypto.createHash('md5');
+		var name = req.body.account;
+		var password = md5.update(req.body.password).digest('hex');
+
+		User.get(name, function(err, user) {
+			if (err) {
+				req.flash('error', err);
+				writeLog(CONSTANT_LOG_ERROR,'login post error: ' + err);
+				return res.redirect('/behappy');
+			}
+
+			if (!user) {
+				req.flash('error', '用户不存在!');
+				return res.redirect('/behappy');
+			}
+
+			if (password != user.password) {
+				req.flash('error', '密码错误!');
+				return res.redirect('/behappy');
+			}
+
+			req.session.happyUser = user;
+			console.log('登录成功');
+			writeLog(CONSTANT_LOG_SUCCESS,'behappy login: userName=' +user.name);
+			//req.flash('success','登陆成功!');
+
+			res.redirect('/happyContent');
+		})
+	})
+
+	app.get('/behappy',checkHappyLogin);
+	app.get('/happyContent',function(req,res){
+		Article.getHappiness('happiness',function(err,articles){
+			if (err) {
+				console.log(err);
+				writeLog(CONSTANT_LOG_ERROR,'happyContents error: ' + err);
+				req.flash('err',err);
+				return;
+			}
+
+			writeLog(CONSTANT_LOG_SUCCESS,'happyContents success: ' + req.session.user.name);
+			res.render('happyContent', {
+						title: CONSTANT_TITLE,
+						happyContents: articles,
+						user: req.session.happyUser,
+						success: req.flash('success').toString(),
+						error: req.flash('error').toString()
+					});
+		})
+	})
+
+	app.get('/updateIsLike/:commentID/:isLike',function(req,res){
+		var commentID = req.params.commentID;
+		var isLike = req.params.isLike;
+		Article.updateIsLike(commentID,isLike,function(err,result) {
+			if (err) {
+				console.log(err);
+				writeLog(CONSTANT_LOG_ERROR,'happyContents error: ' + err);
+				req.flash('err',err);
+				return;
+			}
+			res.end();
+		})
+	})
+
+	app.get('/addComment/:commentID/:content',function(req,res){
+		var commentID = req.params.commentID;
+		var content = req.params.content;
+		// var newComment = new Comment({
+		// 	commentID: commentID,
+		// 	content: content,
+		// 	date: new Date()
+		// });
+		// newComment.save(function(err,comments){
+		// 	if (err) {
+		// 		console.log(err);
+		// 		writeLog(CONSTANT_LOG_ERROR,'articlePublish error: ' + err);
+		// 		req.flash('err', err);
+		// 		//return;
+		// 	}
+		// 	console.log(comments.toString());
+		// 	res.end();
+		// })
+		Article.getArticleByCommentId(commentID,function(err,article){
+			if (err) {
+						// 		console.log(err);
+		 		writeLog(CONSTANT_LOG_ERROR,'articlePublish error: ' + err);
+		 		req.flash('err', err);
+			}
+			console.log(JSON.stringify(article));
+			console.log(JSON.stringify(req.session));
+			var comment = {
+				commentID: commentID,
+				content: content,
+				user: req.session.happyUser.name,
+				date: new Date()
+			}
+			article.comments.push(comment);
+
+			Article.addComments(commentID,article.comments,function(err,articles){
+				if (err) {
+						// 		console.log(err);
+		 			writeLog(CONSTANT_LOG_ERROR,'articlePublish error: ' + err);
+		 			req.flash('err', err);
+				}
+				console.log(articles.toString());
+				res.end();
+			})
+		})
 	})
 
 	/*获取当前页的数据*/
@@ -561,15 +684,20 @@ module.exports = function(app, accessLog,errorLog) {
 
 	/*长文发表*/
 	app.post('/articlePublish',function(req,res){
-		//console.log(JSON.stringify(req.body));
+		console.log(JSON.stringify(req.body));
 		var content = req.body.content;
 		var title = req.body.subTitle;
-		console.log(content);
+		var topic = req.body.topic;
+		console.log(topic);
 		var newArticle = new Article({
+			isLike: 0,
+			commentID: createID(),
+			topic: topic,
 			title: title,
 			content: content,
 			author: req.session.user.name,
-			date: new Date()
+			date: new Date(),
+			comments: []
 		});
 		newArticle.save(function(err,article){
 			if (err) {
@@ -764,6 +892,25 @@ module.exports = function(app, accessLog,errorLog) {
 
 	function checkNotLogin(req, res, next) {
 		if (req.session.user) {
+			req.flash('error', '已登录!');
+			writeLog(CONSTANT_LOG_ERROR,'login error: already logined');
+			res.redirect('back'); //返回之前的页面
+		}
+		next();
+	}
+
+	/*检测是否登录*/
+	function checkHappyLogin(req, res, next) {
+		if (!req.session.happyUser) {
+			req.flash('error', '未登录!');
+			writeLog(CONSTANT_LOG_ERROR,'login error: not login');
+			res.redirect('/behappy');
+		}
+		next();
+	}
+
+	function checkHappyNotLogin(req, res, next) {
+		if (req.session.happyUser) {
 			req.flash('error', '已登录!');
 			writeLog(CONSTANT_LOG_ERROR,'login error: already logined');
 			res.redirect('back'); //返回之前的页面
@@ -1063,5 +1210,21 @@ module.exports = function(app, accessLog,errorLog) {
 			}
 		})
 	})
+
+	var createID = function(){
+		var date = new Date();
+		var str = '';
+		str= str + date.getFullYear() + num2Str(date.getMonth() + 1) + num2Str(date.getDate()) + num2Str(date.getHours()) + num2Str(date.getMinutes()) + num2Str(date.getSeconds());
+		var chars = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+		for(var i = 0; i < 4 ; i ++) {
+         var id = Math.ceil(Math.random()*35);
+         str += chars[id];
+     	}
+     	return str;
+	}
+
+	var num2Str = function(num){
+		return num >9 ? num : ('0' + num);
+	}
 
 }
